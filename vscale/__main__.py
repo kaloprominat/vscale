@@ -154,7 +154,7 @@ def main():
             time.sleep(5)
 
     def save_cache(dir_path, resource, data):
-        if os.path.exists(dir_path):
+        if dir_path is not None and os.path.exists(dir_path):
             with open('{0}/{1}'.format(dir_path, resource), 'w') as f:
                 f.write(json.dumps(data))
 
