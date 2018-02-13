@@ -11,7 +11,7 @@ setup(
     packages = ['vscale'],
     entry_points={
         'console_scripts': [
-            'vscalectl=vscale.__main__:main'
+            'vsctl=vscale.__main__:main'
         ]
     }
 )
